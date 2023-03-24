@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade-Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p>
+   <h1 id="live2">STUDENT GRADE CHECKER</h1>
+   <h2 id="live">Calculate your modulue average or<br>degree classification.</h2>
+</p>
+
+<p id="personal">Name:<b id="demo1"></b></p>
+<p id="personal2">Degree:<b id="demo2"></b></p>
+<p id="personal3">Score:<b id="demo3"></b></p>
+
+<p id="law1">
+   <label for="name">Name</label>
+   <input type="text" name="" id="name" placeholder="Name">
+</p>
+
+<p id="law2"> 
+   <label for="degree">Degree</label>
+   <input type="text" name="" id="degree" placeholder="Degree">
+</p>
+
+<p id="law3">
+   <label for="score">Score</label>
+   <input type="text" name="" id="score" oninput="mydata()" placeholder="Score">
+</p>
+
+<script>
+function mydata(){
+   let name = document.getElementById("name").value 
+   let degree = document.getElementById("degree").value
+   let score = document.getElementById("score").value
+   let eurocup
+   if(score >= 70 && score <= 100){
+      eurocup = "A"
+   }
+   else if(score >= 60 && score <= 69){
+      eurocup = "B"
+   }
+   else if(score >= 50 && score <= 59){
+      eurocup = "C"
+   }
+   else if(score >= 45 && score <= 49){
+      eurocup = "D"
+   }
+   else if(score > 100 || score < 0){
+      eurocup = "Invalid"
+   }
+   else{
+      eurocup = "Failure"
+   }
+
+
+
+   document.getElementById("demo1").innerHTML= name;
+   document.getElementById("demo2").innerHTML= degree;
+   document.getElementById("demo3").innerHTML= eurocup;
+}
+</script>   
+</body>
+</html>

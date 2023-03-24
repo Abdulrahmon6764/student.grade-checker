@@ -1,0 +1,69 @@
+*{
+    margin: none;
+    margin: none;
+    list-style-type: none;
+}
+#live2{
+    text-align: center;
+    background-color: blue;
+    color: whitesmoke;
+}
+#live{
+    margin-left: 200px;
+    color: blueviolet;
+}
+#personal{
+    margin-left: 200px;
+    font-size: 20px;
+}
+#personal2{
+    margin-left: 200px;
+    font-size: 20px;
+}
+#personal3{
+    margin-left: 200px;
+    font-size: 20px;
+}
+#law1{
+margin-left: 200px;
+}
+#law2{
+    margin-left: 200px;
+}
+#law3{
+    margin-left: 200px;
+}
+#demo1{
+    color: brown;
+}
+#demo2{
+    color: blue;
+}
+#demo3{
+color: red;
+}
+#law1 label{
+    font-size: 20px;
+    margin: 5px;
+}
+#law2 label{
+    font-size: 20px;
+    margin: 5px;
+}
+#law3 label{
+    font-size: 20px;
+    margin: 5px;
+}
+#name{
+    width: 500px;
+    border-color: gray;
+    
+}
+#degree{
+    width: 500px;
+    border-color: gray;
+}
+#score{
+    width: 500px;
+    border-color: gray;
+}
